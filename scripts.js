@@ -1,3 +1,6 @@
-//grab and assign form
 const myForm = document.querySelector("form");
-// Attach a "submit" event with a callback fxn
+
+myForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  console.log("hello submit");
+});
