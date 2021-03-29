@@ -15,11 +15,21 @@
   </head>
   <body>
     <h1>Random Student Picker</h1>
-    <form>
-      <div><label for="fname"></label><input type="text" id="fname" /></div>
-      <div><label for="lname"></label><input type="text" id="lname" /></div>
-      <button type="submit">Add Student!</button>
-    </form>
+
+    <div class="flex">
+      <form>
+        <div>
+          <label for="fname" class="screen-reader-text">First Name</label
+          ><input placeholder="First Name" type="text" id="fname" />
+        </div>
+        <div>
+          <label for="lname" class="screen-reader-text">Last Name</label
+          ><input placeholder="Last Name" type="text" id="lname" />
+        </div>
+        <button type="submit" class="button">Add Student!</button>
+        <button type="reset" class="button button--reset">Reset!</button>
+      </form>
+    </div>
     <script src="./scripts.js" type="module"></script>
   </body>
 </html>
