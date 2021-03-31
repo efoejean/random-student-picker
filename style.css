@@ -1,36 +1,61 @@
+:root {
+  --medium-gap: 8px;
+  --large-gap: 12px;
+}
+
 form {
   border: solid thin black;
   border-radius: 4px;
   margin: 0 auto;
   padding: 8px;
-  width: 450px;
-}
-div {
-  gap: 8px;
-  height: 25vw;
-
-  /* vw */
-  width: 100vw;
+  width: 550px;
 }
 
+/* Utility Classes */
 .button {
   background-color: blue;
   border: none;
   border-radius: 4px;
   color: white;
-  margin-top: 8px;
   padding: 8px;
 }
+
+/* The `--` conveys that this a modifier class */
 .button--reset {
   background-color: brown;
 }
+
 .flex {
   display: flex;
+  gap: var(--medium-gap);
 }
-.flex-align-center {
+
+.flex--gap-large {
+  gap: var(--large-gap);
 }
+
+.flex .flex-align-center {
+  align-items: center;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--justify-center {
+  justify-content: center;
+}
+
+.flex--justify-space-between {
+  justify-content: space-between;
+}
+
 .screen-reader-text {
   left: -9999px;
   position: absolute;
   top: -9999px;
+}
+
+.text-center {
+  text-align: center;
 }
