@@ -1,6 +1,10 @@
 const myForm = document.querySelector("form");
+const students = [];
 
 myForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log("hello submit");
+
+  const newStudents = Object.fromEntries(new FormData(event.target));
+
+  students.push(newStudents);
 });
