@@ -4,6 +4,7 @@
 }
 
 form {
+  background-color: darkgray;
   border: solid thin black;
   border-radius: 4px;
   margin: 0 auto;
@@ -34,7 +35,7 @@ form {
   gap: var(--large-gap);
 }
 
-.flex .flex-align-center {
+.flex-align-center {
   align-items: center;
 }
 
