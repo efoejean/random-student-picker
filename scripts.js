@@ -1,6 +1,7 @@
 //
 
 const myForm = document.querySelector("form");
+const p = document.querySelector("p");
 const students = [];
 
 function getRandomIntInclusive(min, max) {
@@ -22,6 +23,6 @@ document.querySelector(".button-jumbo").addEventListener("click", () => {
   const randomNum = getRandomIntInclusive(0, students.length - 1);
 
   const randomName = students[randomNum];
-  // log the first and last name.
-  console.log(`${randomName.firstName}  ${randomName.lastName}`);
+
+  p.innerText = `${randomName.firstName}  ${randomName.lastName}`;
 });
