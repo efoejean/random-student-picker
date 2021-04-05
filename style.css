@@ -26,6 +26,11 @@ form {
   background-color: brown;
 }
 
+.buttom-jumbo:hover,
+.buttom-jumbo:focus {
+  border-radius: 32px;
+}
+
 .flex {
   display: flex;
   gap: var(--medium-gap);
@@ -49,6 +54,10 @@ form {
 
 .flex--justify-space-between {
   justify-content: space-between;
+}
+
+.mt-meduim {
+  margin-top: var(--medium-gap);
 }
 
 .screen-reader-text {
