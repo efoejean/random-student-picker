@@ -6,7 +6,7 @@ const students = [];
 function getRandomIntInclusive(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+  return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
 }
 
 myForm.addEventListener("submit", (event) => {
@@ -17,6 +17,11 @@ myForm.addEventListener("submit", (event) => {
   students.push(newStudents);
 });
 
-document.querySelector(".buttom-jumbo").addEventListener("click", () => {
-  console.log(getRandomIntInclusive(1, 10));
+document.querySelector(".button-jumbo").addEventListener("click", () => {
+  // get the random student object
+  const randomNum = getRandomIntInclusive(0, students.length - 1);
+
+  const randomName = students[randomNum];
+  // log the first and last name.
+  console.log(`${randomName.firstName}  ${randomName.lastName}`);
 });
